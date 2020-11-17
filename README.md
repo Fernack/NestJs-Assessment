@@ -27,41 +27,41 @@ $ npm run start:prod
 
 ## AppIndex:
 
-Database
+### Database  
 The database structure should be the following:
 
-### User table:  
+#### User table:  
   Id		 primary key  
   username  
   password 	
 
-### Profile table:  
+#### Profile table:  
   id 		primary key  
   userId	 	forgien key (User)  
   addressId	forgien key (Address)  
   name  
 
-### Address table:  
+#### Address table:  
   id 		primary key  
   cityId		forgien key (City)  
   street		
 
-### City table:  
+#### City table:  
   id 		primary key  
   countryId  
   name  
 
-### Country table:
+#### Country table:
   id 		primary key  
   name  
 
 Feel free to initialize the city and country tables for simplicity.
 
-REST-API:
+### REST-API:  
   The API's endpoints:  
-  POST Creates a user given (username,password,name,anddres,cityId)  
-  POST returns a valid JWT token given (username,password)  
-  GET Return a relevant user profile given a valid JWT token in a Authorization header with following structure  
+  #### POST Creates a user given (username,password,name,anddres,cityId)  
+  #### POST returns a valid JWT token given (username,password)  
+  #### GET Return a relevant user profile given a valid JWT token in a Authorization header with following structure  
   ```bash
     {
       "id":1,
