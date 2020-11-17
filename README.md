@@ -10,6 +10,8 @@
 
 ```bash
 $ npm install
+
+In db scheme folder contains slq for import in your database.
 ```
 
 ## Running the app
